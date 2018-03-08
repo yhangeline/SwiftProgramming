@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TextMessage" rowHeight="68" id="Yze-nv-saZ" customClass="TextMessageCell" customModule="Precious" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="68"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Yze-nv-saZ" id="mX3-SE-zJ6">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="67.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oQy-i9-ema">
+                        <rect key="frame" x="0.0" y="5" width="34.5" height="57.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YwH-Sc-GnP" customClass="ClickableLabel" customModule="Precious" customModuleProvider="target">
+                                <rect key="frame" x="10" y="5" width="14.5" height="47.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.082352941176470587" green="0.082352941176470587" blue="0.082352941176470587" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.92156862745098034" green="0.92156862745098034" blue="0.92156862745098034" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="YwH-Sc-GnP" secondAttribute="trailing" constant="10" id="KVs-Uw-6SA"/>
+                            <constraint firstAttribute="bottom" secondItem="YwH-Sc-GnP" secondAttribute="bottom" constant="5" id="OWZ-lh-zlb"/>
+                            <constraint firstItem="YwH-Sc-GnP" firstAttribute="top" secondItem="oQy-i9-ema" secondAttribute="top" constant="5" id="Yma-RZ-2Xg"/>
+                            <constraint firstItem="YwH-Sc-GnP" firstAttribute="leading" secondItem="oQy-i9-ema" secondAttribute="leading" constant="10" id="pcd-It-NCI"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="42" id="yaf-bS-ZOK"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="24"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="oQy-i9-ema" firstAttribute="top" secondItem="mX3-SE-zJ6" secondAttribute="top" constant="5" id="4vm-oE-Ucd"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="oQy-i9-ema" secondAttribute="trailing" id="Nmf-hc-AeH"/>
+                    <constraint firstAttribute="bottom" secondItem="oQy-i9-ema" secondAttribute="bottom" constant="5" id="XP3-sZ-VUB"/>
+                    <constraint firstItem="oQy-i9-ema" firstAttribute="leading" secondItem="mX3-SE-zJ6" secondAttribute="leading" id="tVH-an-Uyv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="1iS-Zk-dtO"/>
+            <connections>
+                <outlet property="label" destination="YwH-Sc-GnP" id="k6Z-8n-VWL"/>
+            </connections>
+            <point key="canvasLocation" x="42" y="162"/>
+        </tableViewCell>
+    </objects>
+</document>

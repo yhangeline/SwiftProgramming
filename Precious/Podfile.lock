@@ -1,0 +1,62 @@
+PODS:
+  - Alamofire (4.6.0)
+  - EZSwiftExtensions (1.11)
+  - Hue (3.0.1)
+  - JCore (1.1.6)
+  - JPush (3.0.7):
+    - JCore (~> 1.1.6)
+  - Kingfisher (4.5.0)
+  - MonkeyKing (1.4.2)
+  - Neat (0.1)
+  - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.0.0)
+  - Starscream (3.0.2)
+  - SwiftyJSON (4.0.0)
+  - SwipeBack (1.1.1)
+  - URLNavigator (2.0.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - EZSwiftExtensions (from `https://github.com/goktugyil/EZSwiftExtensions.git`, branch `swift4`)
+  - Hue
+  - JPush
+  - Kingfisher
+  - MonkeyKing
+  - Neat
+  - RxCocoa
+  - RxSwift
+  - Starscream
+  - SwiftyJSON
+  - SwipeBack (~> 1.1)
+  - URLNavigator
+
+EXTERNAL SOURCES:
+  EZSwiftExtensions:
+    :branch: swift4
+    :git: https://github.com/goktugyil/EZSwiftExtensions.git
+
+CHECKOUT OPTIONS:
+  EZSwiftExtensions:
+    :commit: 04e3bc27e273925298a8a48d64d912e2b783303a
+    :git: https://github.com/goktugyil/EZSwiftExtensions.git
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  EZSwiftExtensions: 9d3dc8a51818e2fbfd11099b38a2c47d0ca693d0
+  Hue: 93e852fa6211ab35922ad8c293f51c43d6c79eb2
+  JCore: 18fc8725124f26e55625eaf224659b3a999dcf63
+  JPush: 111b79b8a0169ab8fd4c486dac3ed166ed69293e
+  Kingfisher: 26ae0473102b77b575da51960c932431e3745407
+  MonkeyKing: 64846a7ef403806abbffaf333cec72521b39465d
+  Neat: 0e9eeeaaf155dbced85c369f23f867c2741618cd
+  RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
+  Starscream: b512c62f6706421221b5ceb2ba01a9f58aca5bea
+  SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
+  SwipeBack: d6759601b40da1f4161033feb30ab475d7d04322
+  URLNavigator: af5582fbbb3586c958be16835d799bfdb23a4793
+
+PODFILE CHECKSUM: 1ed86cd2b86caac4e41b8da995d5a1a396292cbb
+
+COCOAPODS: 1.3.1

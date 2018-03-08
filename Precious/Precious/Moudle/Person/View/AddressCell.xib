@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Address" rowHeight="116" id="KGk-i7-Jjw" customClass="AddressCell" customModule="Precious" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="366" height="115.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ERH-C2-m1s">
+                        <rect key="frame" x="72" y="16" width="39.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="2dB-iR-msC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FFQ-4K-DbX">
+                        <rect key="frame" x="16" y="42" width="36" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="1ak-fY-5L5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EAP-eU-JCH">
+                        <rect key="frame" x="22" y="87" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="Eda-8H-KXh"/>
+                            <constraint firstAttribute="width" constant="22" id="IBD-cZ-hYv"/>
+                        </constraints>
+                        <state key="normal" image="btn_radio"/>
+                        <state key="selected" image="btn_radio_ed"/>
+                        <connections>
+                            <action selector="checkAddress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="ang-l5-Mmj"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="默认地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xiD-3p-Tx2">
+                        <rect key="frame" x="60" y="88" width="57.5" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="GFB-Ks-0o2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hVt-z7-dZD">
+                        <rect key="frame" x="239" y="88" width="46" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="fgs-Vq-reH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title=" 编辑" image="icon_account_address_edit">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="editAddress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sIz-1Z-qlQ"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cc6-D9-wVJ">
+                        <rect key="frame" x="16" y="16" width="39.5" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="22" id="0ad-GG-q6j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" red="0.21176470589999999" green="0.21176470589999999" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6uL-yi-a69">
+                        <rect key="frame" x="16" y="78" width="350" height="1"/>
+                        <color key="backgroundColor" red="0.92941176469999998" green="0.92941176469999998" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="2AY-ZE-jK7"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLr-lz-8lm">
+                        <rect key="frame" x="305" y="88" width="45" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="kvV-48-JAL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title=" 删除" image="icon_account_address_del">
+                            <color key="titleColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <connections>
+                            <action selector="deleteAddress:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="FZ3-sE-Ac2"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="6uL-yi-a69" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="1uq-2P-4ud"/>
+                    <constraint firstAttribute="trailing" secondItem="BLr-lz-8lm" secondAttribute="trailing" constant="16" id="7MD-Go-TJk"/>
+                    <constraint firstItem="EAP-eU-JCH" firstAttribute="top" secondItem="6uL-yi-a69" secondAttribute="bottom" constant="8" id="7ll-cT-YnQ"/>
+                    <constraint firstItem="cc6-D9-wVJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="16" id="C9l-9p-5ce"/>
+                    <constraint firstItem="ERH-C2-m1s" firstAttribute="bottom" secondItem="cc6-D9-wVJ" secondAttribute="bottom" id="FX6-xx-1yI"/>
+                    <constraint firstItem="xiD-3p-Tx2" firstAttribute="centerY" secondItem="EAP-eU-JCH" secondAttribute="centerY" id="Gu1-NT-loJ"/>
+                    <constraint firstItem="cc6-D9-wVJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="KZw-Yg-Rhq"/>
+                    <constraint firstAttribute="bottom" secondItem="EAP-eU-JCH" secondAttribute="bottom" constant="6.5" id="Mkb-ok-sW4"/>
+                    <constraint firstItem="ERH-C2-m1s" firstAttribute="leading" secondItem="cc6-D9-wVJ" secondAttribute="trailing" constant="16" id="Wx8-Rn-riV"/>
+                    <constraint firstItem="FFQ-4K-DbX" firstAttribute="top" secondItem="cc6-D9-wVJ" secondAttribute="bottom" constant="4" id="a9n-W0-Ylz"/>
+                    <constraint firstItem="6uL-yi-a69" firstAttribute="top" secondItem="FFQ-4K-DbX" secondAttribute="bottom" constant="16" id="flo-Fg-x8S"/>
+                    <constraint firstItem="BLr-lz-8lm" firstAttribute="leading" secondItem="hVt-z7-dZD" secondAttribute="trailing" constant="20" id="g8d-8s-UWd"/>
+                    <constraint firstItem="xiD-3p-Tx2" firstAttribute="leading" secondItem="EAP-eU-JCH" secondAttribute="trailing" constant="16" id="gAo-iy-j3K"/>
+                    <constraint firstItem="hVt-z7-dZD" firstAttribute="centerY" secondItem="EAP-eU-JCH" secondAttribute="centerY" id="jMV-gP-va1"/>
+                    <constraint firstItem="FFQ-4K-DbX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="ks2-tT-awy"/>
+                    <constraint firstItem="BLr-lz-8lm" firstAttribute="centerY" secondItem="EAP-eU-JCH" secondAttribute="centerY" id="sbD-zj-lEv"/>
+                    <constraint firstItem="EAP-eU-JCH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="ttV-0e-N6s"/>
+                    <constraint firstAttribute="trailing" secondItem="6uL-yi-a69" secondAttribute="trailing" id="yya-ZG-vxc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="address" destination="FFQ-4K-DbX" id="LAH-ty-LtP"/>
+                <outlet property="defaultButton" destination="EAP-eU-JCH" id="wis-U1-tfe"/>
+                <outlet property="name" destination="cc6-D9-wVJ" id="Mdh-Cl-puu"/>
+                <outlet property="phone" destination="ERH-C2-m1s" id="r84-6V-Y3Z"/>
+            </connections>
+            <point key="canvasLocation" x="65" y="186"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="btn_radio" width="22" height="22"/>
+        <image name="btn_radio_ed" width="22" height="22"/>
+        <image name="icon_account_address_del" width="12" height="12"/>
+        <image name="icon_account_address_edit" width="13" height="12"/>
+    </resources>
+</document>

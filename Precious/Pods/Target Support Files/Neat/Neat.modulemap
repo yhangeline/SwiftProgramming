@@ -1,0 +1,6 @@
+framework module Neat {
+  umbrella header "Neat-umbrella.h"
+
+  export *
+  module * { export * }
+}
